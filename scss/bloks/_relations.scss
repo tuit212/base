@@ -1,0 +1,7 @@
+.relations-section{
+    padding: 120px 0 140px 0;
+
+    .relations__list{
+        @include center(space-between);
+    }
+}

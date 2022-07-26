@@ -1,0 +1,37 @@
+.boxes-section{
+    padding: 140px 0;
+    background-image: url("../../img/img1.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 320px) calc(50% + 200px);
+
+    .boxes{
+        @include center(space-between);
+
+        .boxes__content{
+            width: 516px;
+
+            .boxes__content-span{
+                font-weight: 400;
+                line-height: 160%;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: #1D92FF;
+            }
+
+            .boxes__content-title{
+                margin: 10px 0 42px 0;
+                font-weight: 600;
+                line-height: 140%;
+                font-size: 39px;
+                text-transform: capitalize;
+                color: #03090F;
+
+                > span{
+                    color: #01070D;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}

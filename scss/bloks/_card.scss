@@ -1,0 +1,90 @@
+.card-section{
+    padding: 50px 0;
+
+    .card{
+
+        .card__top{
+            width: 620px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+            @include center(center);
+            flex-wrap: wrap;
+
+            .card__top-span{
+                font-weight: 400;
+                line-height: 160%;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: #1D92FF;
+            }
+
+            .card__top-title{
+                margin: 10px 0 25px 0;
+                font-weight: 600;
+                line-height: 135%;
+                font-size: 39px;
+                text-align: center;
+                color: #000000;
+            }
+
+            .card__top-text{
+                font-weight: 400;
+                line-height: 160%;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.7);
+                text-align: center;
+            }
+        }
+
+        .card__bottom-list{
+            @include center(space-between);
+            padding: 38px 68px 88px 68px;
+            flex-wrap: wrap;
+
+            .card__bottom-item{
+                width: 280px;
+                @include center(center);
+                flex-wrap: wrap;
+
+                .card__bottom-box{
+                    display: block;
+                    padding: 29px 30px;
+                    background-color: #F1F7FC;
+                    transform: rotate(48.61deg);
+                    border: 0.3px solid #002547;
+                    margin-left: 43px;
+
+                    > img{
+                        transform: rotate(-48.61deg);
+                    }
+                }
+
+                .card__bottom-title{
+                    display: block;
+                    margin-top: 40px;
+                    font-weight: 700;
+                    line-height: 150%;
+                    font-size: 20px;
+                    color: #000000;
+                    text-transform: capitalize;
+                }
+
+                .card__bottom-text{
+                    margin-top: 15px;
+                    font-weight: 400;
+                    line-height: 160%;
+                    font-size: 16px;
+                    color: rgba(1, 7, 13, 0.7);
+                    text-align: center;
+                }
+            }
+
+            .card__bottom-item:nth-child(4) ,
+            .card__bottom-item:nth-child(5) ,
+            .card__bottom-item:nth-child(6) {
+                margin-top: 100px;
+            }
+        }
+    }
+}
